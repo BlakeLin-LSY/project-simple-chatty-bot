@@ -18,11 +18,11 @@ def guess_age():
     rem7 = int(input())
     age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
 
-    print("Your age is " + str(age) + "; that's a good time to start programming!")
+    print("Your age is " + str(age) + ";\nthat's a good time to start programming!")
 
 
 def count():
-    print('Now I will prove to you that I can count to any number you want.')
+    print('\nNow I will prove to you that I can count to any number you want.')
 
     num = int(input())
     curr = 0
@@ -32,26 +32,27 @@ def count():
 
 
 def test():
-    print("Let's test your programming knowledge.")
+    print("\nLet's test your programming knowledge.")
     # write your code here
     print("Why are you here?")
-    print("1. To repeat a statement multiple times.\
-        2. To decompose a program into several small subroutines.\
-        3. To determine the execution time of a program.\
-        4. To interrupt the execution of a program.\
-        5. To Code the World!!!!!!")
+    print("1. To repeat a statement multiple times.\n"
+          "2. To decompose a program into several small subroutines.\n"
+          "3. To determine the execution time of a program.\n"
+          "4. To interrupt the execution of a program.\n"
+          "5. To Code the world!!\n")
     ans = 0
     while ans != "5":
-        print("Wrong Answer!! Please Try Again!!")
         ans = input()
-    print("Yes!! That's my boy. Have a nice coding day!")
+        print("Wrong Answer!! Please Try Again!!")
+        
+    print('Completed, have a nice day!')
 
 
 def end():
     print('Congratulations, have a nice day!')
 
 
-greet('Aid', '2020')  # change it as you need
+greet('Aid', '2021')  # change it as you need
 remind_name()
 guess_age()
 count()
